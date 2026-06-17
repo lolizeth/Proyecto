@@ -1,0 +1,12 @@
+C:\Users\Usuario\OneDrive\Documentos\Repositorio\Clase\Clase\bin\Debug\Clase.exe.config
+C:\Users\Usuario\OneDrive\Documentos\Repositorio\Clase\Clase\bin\Debug\Clase.exe
+C:\Users\Usuario\OneDrive\Documentos\Repositorio\Clase\Clase\bin\Debug\Clase.pdb
+C:\Users\Usuario\OneDrive\Documentos\Repositorio\Clase\Clase\obj\Debug\Clase.csproj.AssemblyReference.cache
+C:\Users\Usuario\OneDrive\Documentos\Repositorio\Clase\Clase\obj\Debug\Clase.FlmClientes.resources
+C:\Users\Usuario\OneDrive\Documentos\Repositorio\Clase\Clase\obj\Debug\Clase.Form1.resources
+C:\Users\Usuario\OneDrive\Documentos\Repositorio\Clase\Clase\obj\Debug\Clase.FrmEmpleados.resources
+C:\Users\Usuario\OneDrive\Documentos\Repositorio\Clase\Clase\obj\Debug\Clase.Properties.Resources.resources
+C:\Users\Usuario\OneDrive\Documentos\Repositorio\Clase\Clase\obj\Debug\Clase.csproj.GenerateResource.cache
+C:\Users\Usuario\OneDrive\Documentos\Repositorio\Clase\Clase\obj\Debug\Clase.csproj.CoreCompileInputs.cache
+C:\Users\Usuario\OneDrive\Documentos\Repositorio\Clase\Clase\obj\Debug\Clase.exe
+C:\Users\Usuario\OneDrive\Documentos\Repositorio\Clase\Clase\obj\Debug\Clase.pdb
