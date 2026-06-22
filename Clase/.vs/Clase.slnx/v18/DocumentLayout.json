@@ -3,16 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\Usuario\\OneDrive\\Documentos\\Repositorio\\Proyecto\\Clase\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{920B2C8A-8BA7-4E93-9EE5-15681C8D1E08}|Clase\\Clase.csproj|C:\\Users\\Usuario\\OneDrive\\Documentos\\Repositorio\\Proyecto\\Clase\\clase\\flmclientes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{920B2C8A-8BA7-4E93-9EE5-15681C8D1E08}|Clase\\Clase.csproj|solutionrelative:clase\\flmclientes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{920B2C8A-8BA7-4E93-9EE5-15681C8D1E08}|Clase\\Clase.csproj|c:\\users\\usuario\\onedrive\\documentos\\repositorio\\proyecto\\clase\\clase\\frmproducto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{920B2C8A-8BA7-4E93-9EE5-15681C8D1E08}|Clase\\Clase.csproj|solutionrelative:clase\\frmproducto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{920B2C8A-8BA7-4E93-9EE5-15681C8D1E08}|Clase\\Clase.csproj|c:\\users\\usuario\\onedrive\\documentos\\repositorio\\proyecto\\clase\\clase\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{920B2C8A-8BA7-4E93-9EE5-15681C8D1E08}|Clase\\Clase.csproj|c:\\users\\usuario\\onedrive\\documentos\\repositorio\\proyecto\\clase\\clase\\frmproducto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{920B2C8A-8BA7-4E93-9EE5-15681C8D1E08}|Clase\\Clase.csproj|solutionrelative:clase\\frmproducto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{920B2C8A-8BA7-4E93-9EE5-15681C8D1E08}|Clase\\Clase.csproj|C:\\Users\\Usuario\\OneDrive\\Documentos\\Repositorio\\Proyecto\\Clase\\clase\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{920B2C8A-8BA7-4E93-9EE5-15681C8D1E08}|Clase\\Clase.csproj|solutionrelative:clase\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{920B2C8A-8BA7-4E93-9EE5-15681C8D1E08}|Clase\\Clase.csproj|c:\\users\\usuario\\onedrive\\documentos\\repositorio\\proyecto\\clase\\clase\\flmclientes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{920B2C8A-8BA7-4E93-9EE5-15681C8D1E08}|Clase\\Clase.csproj|solutionrelative:clase\\flmclientes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{920B2C8A-8BA7-4E93-9EE5-15681C8D1E08}|Clase\\Clase.csproj|c:\\users\\usuario\\onedrive\\documentos\\repositorio\\proyecto\\clase\\clase\\flmclientes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{920B2C8A-8BA7-4E93-9EE5-15681C8D1E08}|Clase\\Clase.csproj|solutionrelative:clase\\flmclientes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{920B2C8A-8BA7-4E93-9EE5-15681C8D1E08}|Clase\\Clase.csproj|C:\\Users\\Usuario\\OneDrive\\Documentos\\Repositorio\\Proyecto\\Clase\\clase\\frmempleados.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
@@ -30,7 +34,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 8,
+          "SelectedChildIndex": 10,
           "Children": [
             {
               "$type": "Bookmark",
@@ -54,20 +58,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "FlmClientes.cs",
-              "DocumentMoniker": "C:\\Users\\Usuario\\OneDrive\\Documentos\\Repositorio\\Proyecto\\Clase\\Clase\\FlmClientes.cs",
-              "RelativeDocumentMoniker": "Clase\\FlmClientes.cs",
-              "ToolTip": "C:\\Users\\Usuario\\OneDrive\\Documentos\\Repositorio\\Proyecto\\Clase\\Clase\\FlmClientes.cs",
-              "RelativeToolTip": "Clase\\FlmClientes.cs",
-              "ViewState": "AgIAABMAAAAAAAAAAAD4vxoAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-18T15:46:19.845Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "Form1.cs",
               "DocumentMoniker": "C:\\Users\\Usuario\\OneDrive\\Documentos\\Repositorio\\Proyecto\\Clase\\Clase\\Form1.cs",
               "RelativeDocumentMoniker": "Clase\\Form1.cs",
@@ -80,7 +71,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "FrmEmpleados.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\Usuario\\OneDrive\\Documentos\\Repositorio\\Proyecto\\Clase\\Clase\\FrmEmpleados.cs",
               "RelativeDocumentMoniker": "Clase\\FrmEmpleados.cs",
@@ -92,7 +83,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "FlmClientes.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\Usuario\\OneDrive\\Documentos\\Repositorio\\Proyecto\\Clase\\Clase\\FlmClientes.cs",
               "RelativeDocumentMoniker": "Clase\\FlmClientes.cs",
@@ -104,7 +95,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "Form1.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\Usuario\\OneDrive\\Documentos\\Repositorio\\Proyecto\\Clase\\Clase\\Form1.cs",
               "RelativeDocumentMoniker": "Clase\\Form1.cs",
@@ -112,6 +103,31 @@
               "RelativeToolTip": "Clase\\Form1.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-06-17T15:15:46.95Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "FrmProducto.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\OneDrive\\Documentos\\Repositorio\\Proyecto\\Clase\\Clase\\FrmProducto.cs",
+              "RelativeDocumentMoniker": "Clase\\FrmProducto.cs",
+              "ToolTip": "C:\\Users\\Usuario\\OneDrive\\Documentos\\Repositorio\\Proyecto\\Clase\\Clase\\FrmProducto.cs",
+              "RelativeToolTip": "Clase\\FrmProducto.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAjwBoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-22T15:19:23.254Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "FrmProducto.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\Usuario\\OneDrive\\Documentos\\Repositorio\\Proyecto\\Clase\\Clase\\FrmProducto.cs",
+              "RelativeDocumentMoniker": "Clase\\FrmProducto.cs",
+              "ToolTip": "C:\\Users\\Usuario\\OneDrive\\Documentos\\Repositorio\\Proyecto\\Clase\\Clase\\FrmProducto.cs [Dise\u00F1o]",
+              "RelativeToolTip": "Clase\\FrmProducto.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-22T15:16:09.723Z",
               "EditorCaption": " [Dise\u00F1o]"
             }
           ]

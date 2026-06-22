@@ -22,3 +22,4 @@ C:\Users\Usuario\OneDrive\Documentos\Repositorio\Proyecto\Clase\Clase\obj\Debug\
 C:\Users\Usuario\OneDrive\Documentos\Repositorio\Proyecto\Clase\Clase\obj\Debug\Clase.csproj.CoreCompileInputs.cache
 C:\Users\Usuario\OneDrive\Documentos\Repositorio\Proyecto\Clase\Clase\obj\Debug\Clase.exe
 C:\Users\Usuario\OneDrive\Documentos\Repositorio\Proyecto\Clase\Clase\obj\Debug\Clase.pdb
+C:\Users\Usuario\OneDrive\Documentos\Repositorio\Proyecto\Clase\Clase\obj\Debug\Clase.FrmProducto.resources

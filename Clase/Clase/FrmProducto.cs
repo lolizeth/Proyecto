@@ -10,24 +10,19 @@ using System.Windows.Forms;
 
 namespace Clase
 {
-    public partial class FlmClientes : Form
+    public partial class FrmProducto : Form
     {
-        public FlmClientes()
+        public FrmProducto()
         {
             InitializeComponent();
         }
 
-        private void label4_Click(object sender, EventArgs e)
+        private void FrmProducto_Load(object sender, EventArgs e)
         {
 
         }
 
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void panel1_Paint(object sender, PaintEventArgs e)
+        private void label7_Click(object sender, EventArgs e)
         {
 
         }
