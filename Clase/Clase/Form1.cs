@@ -50,5 +50,10 @@ namespace Clase
         {
             AbrirFormulario(new FlmClientes());
         }
+
+        private void pRODUCTOToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            AbrirFormulario(new FrmProducto());
+        }
     }
 }

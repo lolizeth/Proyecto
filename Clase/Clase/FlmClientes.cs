@@ -31,5 +31,18 @@ namespace Clase
         {
 
         }
+
+        private void btnGuardar_Click(object sender, EventArgs e)
+        {
+            try 
+            {
+
+
+            }
+            catch(Exception ex) 
+            {
+                MessageBox.Show("Error: " + ex.Message);
+            }
     }
+}
 }
