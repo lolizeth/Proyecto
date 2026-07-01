@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.txtId = new System.Windows.Forms.TextBox();
@@ -52,7 +53,6 @@
             this.txtBuscar = new System.Windows.Forms.TextBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.label6 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -81,7 +81,16 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(406, 456);
             this.panel1.TabIndex = 0;
-            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.ForeColor = System.Drawing.Color.Red;
+            this.label4.Location = new System.Drawing.Point(91, 108);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(57, 13);
+            this.label4.TabIndex = 21;
+            this.label4.Text = "Obligatorio";
             // 
             // label3
             // 
@@ -195,7 +204,6 @@
             this.lblCorreo.Size = new System.Drawing.Size(97, 13);
             this.lblCorreo.TabIndex = 3;
             this.lblCorreo.Text = "Correo Electronico:";
-            this.lblCorreo.Click += new System.EventHandler(this.label4_Click);
             // 
             // lblTelefon
             // 
@@ -224,7 +232,6 @@
             this.label1.Size = new System.Drawing.Size(145, 26);
             this.label1.TabIndex = 0;
             this.label1.Text = "Datos del Cliente";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // panel2
             // 
@@ -238,6 +245,7 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(396, 459);
             this.panel2.TabIndex = 0;
+            this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
             // 
             // button5
             // 
@@ -295,16 +303,6 @@
             this.label6.Size = new System.Drawing.Size(147, 26);
             this.label6.TabIndex = 0;
             this.label6.Text = "Lista de Clientes";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.ForeColor = System.Drawing.Color.Red;
-            this.label4.Location = new System.Drawing.Point(91, 108);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(57, 13);
-            this.label4.TabIndex = 21;
-            this.label4.Text = "Obligatorio";
             // 
             // FlmClientes
             // 

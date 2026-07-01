@@ -1,3 +1,6 @@
 <Solution>
   <Project Path="Clase/Clase.csproj" Id="920b2c8a-8ba7-4e93-9ee5-15681c8d1e08" />
+  <Properties Name="SolutionProperties">
+    <Property Name="WorkspaceFolder" Value="Clase" />
+  </Properties>
 </Solution>
