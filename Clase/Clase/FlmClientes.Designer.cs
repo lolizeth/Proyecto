@@ -29,14 +29,13 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
+            this.lblErrorNombre = new System.Windows.Forms.Label();
+            this.lblErrotTelefono = new System.Windows.Forms.Label();
             this.txtId = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.btnGuardar = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
+            this.btnEditar = new System.Windows.Forms.Button();
+            this.btnEliminar = new System.Windows.Forms.Button();
             this.txtCorreo = new System.Windows.Forms.TextBox();
             this.txtTelefono = new System.Windows.Forms.TextBox();
             this.txtNombre = new System.Windows.Forms.TextBox();
@@ -47,8 +46,8 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
+            this.btnBuscar = new System.Windows.Forms.Button();
+            this.btnExportarEx = new System.Windows.Forms.Button();
             this.label8 = new System.Windows.Forms.Label();
             this.txtBuscar = new System.Windows.Forms.TextBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
@@ -60,14 +59,13 @@
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.label4);
-            this.panel1.Controls.Add(this.label3);
-            this.panel1.Controls.Add(this.label9);
+            this.panel1.Controls.Add(this.lblErrorNombre);
+            this.panel1.Controls.Add(this.lblErrotTelefono);
             this.panel1.Controls.Add(this.txtId);
             this.panel1.Controls.Add(this.label7);
             this.panel1.Controls.Add(this.btnGuardar);
-            this.panel1.Controls.Add(this.button2);
-            this.panel1.Controls.Add(this.button3);
+            this.panel1.Controls.Add(this.btnEditar);
+            this.panel1.Controls.Add(this.btnEliminar);
             this.panel1.Controls.Add(this.txtCorreo);
             this.panel1.Controls.Add(this.txtTelefono);
             this.panel1.Controls.Add(this.txtNombre);
@@ -82,35 +80,27 @@
             this.panel1.Size = new System.Drawing.Size(406, 456);
             this.panel1.TabIndex = 0;
             // 
-            // label4
+            // lblErrorNombre
             // 
-            this.label4.AutoSize = true;
-            this.label4.ForeColor = System.Drawing.Color.Red;
-            this.label4.Location = new System.Drawing.Point(91, 108);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(57, 13);
-            this.label4.TabIndex = 21;
-            this.label4.Text = "Obligatorio";
+            this.lblErrorNombre.AutoSize = true;
+            this.lblErrorNombre.ForeColor = System.Drawing.Color.Red;
+            this.lblErrorNombre.Location = new System.Drawing.Point(91, 108);
+            this.lblErrorNombre.Name = "lblErrorNombre";
+            this.lblErrorNombre.Size = new System.Drawing.Size(57, 13);
+            this.lblErrorNombre.TabIndex = 21;
+            this.lblErrorNombre.Text = "Obligatorio";
+            this.lblErrorNombre.Click += new System.EventHandler(this.lblErrorNombre_Click);
             // 
-            // label3
+            // lblErrotTelefono
             // 
-            this.label3.AutoSize = true;
-            this.label3.ForeColor = System.Drawing.Color.Red;
-            this.label3.Location = new System.Drawing.Point(85, 168);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(87, 13);
-            this.label3.TabIndex = 20;
-            this.label3.Text = "(Formato xxx xxx)";
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.ForeColor = System.Drawing.Color.Red;
-            this.label9.Location = new System.Drawing.Point(127, 236);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(87, 13);
-            this.label9.TabIndex = 19;
-            this.label9.Text = "(Formato xxx xxx)";
+            this.lblErrotTelefono.AutoSize = true;
+            this.lblErrotTelefono.ForeColor = System.Drawing.Color.Red;
+            this.lblErrotTelefono.Location = new System.Drawing.Point(85, 173);
+            this.lblErrotTelefono.Name = "lblErrotTelefono";
+            this.lblErrotTelefono.Size = new System.Drawing.Size(87, 13);
+            this.lblErrotTelefono.TabIndex = 20;
+            this.lblErrotTelefono.Text = "(Formato xxx xxx)";
+            this.lblErrotTelefono.Click += new System.EventHandler(this.lblErrotTelefono_Click);
             // 
             // txtId
             // 
@@ -139,25 +129,27 @@
             this.btnGuardar.UseVisualStyleBackColor = false;
             this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
             // 
-            // button2
+            // btnEditar
             // 
-            this.button2.BackColor = System.Drawing.Color.Yellow;
-            this.button2.Location = new System.Drawing.Point(134, 390);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 3;
-            this.button2.Text = "Editar";
-            this.button2.UseVisualStyleBackColor = false;
+            this.btnEditar.BackColor = System.Drawing.Color.Yellow;
+            this.btnEditar.Location = new System.Drawing.Point(139, 393);
+            this.btnEditar.Name = "btnEditar";
+            this.btnEditar.Size = new System.Drawing.Size(75, 23);
+            this.btnEditar.TabIndex = 3;
+            this.btnEditar.Text = "Editar";
+            this.btnEditar.UseVisualStyleBackColor = false;
+            this.btnEditar.Click += new System.EventHandler(this.btnEditar_Click);
             // 
-            // button3
+            // btnEliminar
             // 
-            this.button3.BackColor = System.Drawing.Color.Red;
-            this.button3.Location = new System.Drawing.Point(240, 389);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(75, 23);
-            this.button3.TabIndex = 4;
-            this.button3.Text = "Eliminar";
-            this.button3.UseVisualStyleBackColor = false;
+            this.btnEliminar.BackColor = System.Drawing.Color.Red;
+            this.btnEliminar.Location = new System.Drawing.Point(240, 389);
+            this.btnEliminar.Name = "btnEliminar";
+            this.btnEliminar.Size = new System.Drawing.Size(75, 23);
+            this.btnEliminar.TabIndex = 4;
+            this.btnEliminar.Text = "Eliminar";
+            this.btnEliminar.UseVisualStyleBackColor = false;
+            this.btnEliminar.Click += new System.EventHandler(this.btnEliminar_Click);
             // 
             // txtCorreo
             // 
@@ -235,8 +227,8 @@
             // 
             // panel2
             // 
-            this.panel2.Controls.Add(this.button5);
-            this.panel2.Controls.Add(this.button4);
+            this.panel2.Controls.Add(this.btnBuscar);
+            this.panel2.Controls.Add(this.btnExportarEx);
             this.panel2.Controls.Add(this.label8);
             this.panel2.Controls.Add(this.txtBuscar);
             this.panel2.Controls.Add(this.dataGridView1);
@@ -245,28 +237,29 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(396, 459);
             this.panel2.TabIndex = 0;
-            this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
             // 
-            // button5
+            // btnBuscar
             // 
-            this.button5.BackColor = System.Drawing.Color.RosyBrown;
-            this.button5.ForeColor = System.Drawing.Color.Black;
-            this.button5.Location = new System.Drawing.Point(209, 57);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(75, 23);
-            this.button5.TabIndex = 6;
-            this.button5.Text = "Buscar";
-            this.button5.UseVisualStyleBackColor = false;
+            this.btnBuscar.BackColor = System.Drawing.Color.RosyBrown;
+            this.btnBuscar.ForeColor = System.Drawing.Color.Black;
+            this.btnBuscar.Location = new System.Drawing.Point(209, 57);
+            this.btnBuscar.Name = "btnBuscar";
+            this.btnBuscar.Size = new System.Drawing.Size(75, 23);
+            this.btnBuscar.TabIndex = 6;
+            this.btnBuscar.Text = "Buscar";
+            this.btnBuscar.UseVisualStyleBackColor = false;
+            this.btnBuscar.Click += new System.EventHandler(this.btnBuscar_Click);
             // 
-            // button4
+            // btnExportarEx
             // 
-            this.button4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.button4.Location = new System.Drawing.Point(278, 393);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(105, 23);
-            this.button4.TabIndex = 5;
-            this.button4.Text = "Exportar a Excel";
-            this.button4.UseVisualStyleBackColor = false;
+            this.btnExportarEx.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.btnExportarEx.Location = new System.Drawing.Point(278, 393);
+            this.btnExportarEx.Name = "btnExportarEx";
+            this.btnExportarEx.Size = new System.Drawing.Size(105, 23);
+            this.btnExportarEx.TabIndex = 5;
+            this.btnExportarEx.Text = "Exportar a Excel";
+            this.btnExportarEx.UseVisualStyleBackColor = false;
+            this.btnExportarEx.Click += new System.EventHandler(this.btnExportarEx_Click);
             // 
             // label8
             // 
@@ -338,18 +331,17 @@
         private System.Windows.Forms.TextBox txtNombre;
         private System.Windows.Forms.TextBox txtDireccion;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btnEliminar;
+        private System.Windows.Forms.Button btnEditar;
         private System.Windows.Forms.Button btnGuardar;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.TextBox txtBuscar;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button btnExportarEx;
+        private System.Windows.Forms.Button btnBuscar;
         private System.Windows.Forms.TextBox txtId;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label lblErrotTelefono;
+        private System.Windows.Forms.Label lblErrorNombre;
     }
 }

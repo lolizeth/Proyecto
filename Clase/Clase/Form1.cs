@@ -55,5 +55,12 @@ namespace Clase
         {
             AbrirFormulario(new FrmProducto());
         }
+
+     
+
+        private void eMPLEADOSToolStripMenuItem_Click_1(object sender, EventArgs e)
+        {
+            AbrirFormulario(new FrmEmpleados());
+        }
     }
 }

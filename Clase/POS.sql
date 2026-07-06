@@ -24,3 +24,12 @@ CREATE TABLE proveedores(
  correo VARCHAR(50)
 );
 
+CREATE TABLE empleados(
+id_empleado INT PRIMARY KEY AUTO_INCREMENT,
+nombre VARCHAR(50),
+telefono VARCHAR(20),
+correo VARCHAR(50),
+area VARCHAR(50),
+direccion VARCHAR(100)
+, anos_trabajando VARCHAR(20)
+);
