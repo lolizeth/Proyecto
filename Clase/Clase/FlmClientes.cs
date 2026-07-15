@@ -80,8 +80,8 @@ namespace Clase
                 if (string.IsNullOrWhiteSpace(txtNombre.Text))
                     errores.Add("El nombre es obligatorio");
 
-                if (txtNombre.Text.Trim().Length < 3)
-                    errores.Add("El nombre debe tener al menos 3 caracteres");
+                if (txtNombre.Text.Trim().Length < 6)
+                    errores.Add("El nombre debe tener al menos 6 caracteres");
 
                 if (string.IsNullOrWhiteSpace(txtTelefono.Text))
                     errores.Add("El teléfono es obligatorio");
@@ -142,6 +142,7 @@ namespace Clase
             {
                 DataGridViewRow fila = dataGridView1.Rows[e.RowIndex];
 
+                txtId.Text = fila.Cells["id_cliente"].Value.ToString();
                 txtNombre.Text = fila.Cells["nombre"].Value.ToString();
                 txtTelefono.Text = fila.Cells["telefono"].Value.ToString();
                 txtCorreo.Text = fila.Cells["correo"].Value.ToString();
@@ -150,81 +151,25 @@ namespace Clase
         }
 
         private void btnEditar_Click(object sender, EventArgs e)
-        {
-            try
+        { if (txtId.Text == "")
             {
-                if (dataGridView1.CurrentRow == null)
-                {
-                    MessageBox.Show("Seleccione un cliente.");
-                    return;
-                }
-
-                List<string> errores = new List<string>();
-
-                if (string.IsNullOrWhiteSpace(txtNombre.Text))
-                    errores.Add("El nombre es obligatorio");
-
-                if (txtNombre.Text.Trim().Length < 3)
-                    errores.Add("El nombre debe tener al menos 3 caracteres");
-
-                if (string.IsNullOrWhiteSpace(txtTelefono.Text))
-                    errores.Add("El teléfono es obligatorio");
-
-                if (string.IsNullOrWhiteSpace(txtCorreo.Text))
-                    errores.Add("El correo es obligatorio");
-
-                if (string.IsNullOrWhiteSpace(txtDireccion.Text))
-                    errores.Add("La dirección es obligatoria");
-
-                if (errores.Count > 0)
-                {
-                    MessageBox.Show(string.Join("\n", errores));
-                    return;
-                }
-
-                int id = Convert.ToInt32(dataGridView1.CurrentRow.Cells["id_cliente"].Value);
-
-                Conexion conexion = new Conexion();
-
-                using (MySqlConnection conn = conexion.ObtenerConexion())
-                {
-                    conn.Open();
-
-                    string query = @"UPDATE clientes
-                                     SET nombre=@Nombre,
-                                         telefono=@Telefono,
-                                         correo=@Correo,
-                                         direccion=@Direccion
-                                     WHERE id_cliente=@Id";
-
-                    using (MySqlCommand cmd = new MySqlCommand(query, conn))
-                    {
-                        cmd.Parameters.AddWithValue("@nombre", txtNombre.Text);
-                        cmd.Parameters.AddWithValue("@telefono", txtTelefono.Text);
-                        cmd.Parameters.AddWithValue("@correo", txtCorreo.Text);
-                        cmd.Parameters.AddWithValue("@direccion", txtDireccion.Text);
-                        cmd.Parameters.AddWithValue("@id_cliente", id);
-
-                        if (cmd.ExecuteNonQuery() > 0)
-                        {
-                            MessageBox.Show("Cliente actualizado correctamente.");
-
-                            Limpiar();
-                            CargarClientes();
-                        }
-                        else
-                        {
-                            MessageBox.Show("No se pudo actualizar.");
-                        }
-                    }
-                }
+                MessageBox.Show("Seleccione un cliente para editar.");
+                return;
             }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
+            Conexion conexion = new Conexion();
+            MySqlConnection conn = conexion.ObtenerConexion();
+            conn.Open();
+            string sql = "UPDATE clientes SET nombre ='" + txtNombre.Text + 
+                "', telefono = '" + txtTelefono.Text + 
+                "', correo = '" + txtCorreo.Text +
+                "', direccion = '" + txtDireccion.Text + 
+                "' WHERE id_cliente = " + txtId.Text;
+            MySqlCommand cmd = new MySqlCommand(sql, conn);
+            cmd.ExecuteNonQuery();
+            conn.Close();
+            MessageBox.Show("Cliente editado correctamente.");
+            Limpiar();
         }
-
         private void btnEliminar_Click(object sender, EventArgs e)
         {
             try

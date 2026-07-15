@@ -51,16 +51,33 @@ namespace Clase
             AbrirFormulario(new FlmClientes());
         }
 
-        private void pRODUCTOToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            AbrirFormulario(new FrmProducto());
-        }
+    
 
      
 
         private void eMPLEADOSToolStripMenuItem_Click_1(object sender, EventArgs e)
         {
             AbrirFormulario(new FrmEmpleados());
+        }
+
+        private void pRODUCTOToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            AbrirFormulario(new FrmProducto());
+        }
+
+        private void pROVEEDORESToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            AbrirFormulario(new FrmProveedores());
+        }
+
+        private void cATEGORIAToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            AbrirFormulario(new FrmCategoria());
+        }
+
+        private void iNICIOToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            AbrirFormulario(new Form1());
         }
     }
 }

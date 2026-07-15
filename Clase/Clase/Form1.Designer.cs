@@ -31,9 +31,11 @@
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.iNICIOToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.cLIENTESToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.pRODUCTOToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.pROVEEDORESToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.eMPLEADOSToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.pRODUCTOToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.Panel1 = new System.Windows.Forms.Panel();
+            this.cATEGORIAToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -43,11 +45,13 @@
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.iNICIOToolStripMenuItem,
             this.cLIENTESToolStripMenuItem,
+            this.pROVEEDORESToolStripMenuItem,
+            this.eMPLEADOSToolStripMenuItem,
             this.pRODUCTOToolStripMenuItem,
-            this.eMPLEADOSToolStripMenuItem});
+            this.cATEGORIAToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(800, 25);
+            this.menuStrip1.Size = new System.Drawing.Size(961, 25);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -56,6 +60,7 @@
             this.iNICIOToolStripMenuItem.Name = "iNICIOToolStripMenuItem";
             this.iNICIOToolStripMenuItem.Size = new System.Drawing.Size(57, 21);
             this.iNICIOToolStripMenuItem.Text = "INICIO";
+            this.iNICIOToolStripMenuItem.Click += new System.EventHandler(this.iNICIOToolStripMenuItem_Click);
             // 
             // cLIENTESToolStripMenuItem
             // 
@@ -64,12 +69,12 @@
             this.cLIENTESToolStripMenuItem.Text = "CLIENTES";
             this.cLIENTESToolStripMenuItem.Click += new System.EventHandler(this.cLIENTESToolStripMenuItem_Click);
             // 
-            // pRODUCTOToolStripMenuItem
+            // pROVEEDORESToolStripMenuItem
             // 
-            this.pRODUCTOToolStripMenuItem.Name = "pRODUCTOToolStripMenuItem";
-            this.pRODUCTOToolStripMenuItem.Size = new System.Drawing.Size(87, 21);
-            this.pRODUCTOToolStripMenuItem.Text = "PRODUCTO";
-            this.pRODUCTOToolStripMenuItem.Click += new System.EventHandler(this.pRODUCTOToolStripMenuItem_Click);
+            this.pROVEEDORESToolStripMenuItem.Name = "pROVEEDORESToolStripMenuItem";
+            this.pROVEEDORESToolStripMenuItem.Size = new System.Drawing.Size(108, 21);
+            this.pROVEEDORESToolStripMenuItem.Text = "PROVEEDORES";
+            this.pROVEEDORESToolStripMenuItem.Click += new System.EventHandler(this.pROVEEDORESToolStripMenuItem_Click);
             // 
             // eMPLEADOSToolStripMenuItem
             // 
@@ -78,20 +83,34 @@
             this.eMPLEADOSToolStripMenuItem.Text = "EMPLEADOS";
             this.eMPLEADOSToolStripMenuItem.Click += new System.EventHandler(this.eMPLEADOSToolStripMenuItem_Click_1);
             // 
+            // pRODUCTOToolStripMenuItem
+            // 
+            this.pRODUCTOToolStripMenuItem.Name = "pRODUCTOToolStripMenuItem";
+            this.pRODUCTOToolStripMenuItem.Size = new System.Drawing.Size(87, 21);
+            this.pRODUCTOToolStripMenuItem.Text = "PRODUCTO";
+            this.pRODUCTOToolStripMenuItem.Click += new System.EventHandler(this.pRODUCTOToolStripMenuItem_Click);
+            // 
             // Panel1
             // 
             this.Panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.Panel1.Location = new System.Drawing.Point(0, 25);
             this.Panel1.Name = "Panel1";
-            this.Panel1.Size = new System.Drawing.Size(800, 425);
+            this.Panel1.Size = new System.Drawing.Size(961, 359);
             this.Panel1.TabIndex = 1;
             this.Panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
+            // 
+            // cATEGORIAToolStripMenuItem
+            // 
+            this.cATEGORIAToolStripMenuItem.Name = "cATEGORIAToolStripMenuItem";
+            this.cATEGORIAToolStripMenuItem.Size = new System.Drawing.Size(87, 21);
+            this.cATEGORIAToolStripMenuItem.Text = "CATEGORIA";
+            this.cATEGORIAToolStripMenuItem.Click += new System.EventHandler(this.cATEGORIAToolStripMenuItem_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(961, 384);
             this.Controls.Add(this.Panel1);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
@@ -111,8 +130,10 @@
         private System.Windows.Forms.Panel Panel1;
         private System.Windows.Forms.ToolStripMenuItem iNICIOToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem cLIENTESToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem pRODUCTOToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem pROVEEDORESToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem eMPLEADOSToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem pRODUCTOToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem cATEGORIAToolStripMenuItem;
     }
 }
 

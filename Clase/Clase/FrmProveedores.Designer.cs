@@ -1,6 +1,6 @@
 ﻿namespace Clase
 {
-    partial class FlmClientes
+    partial class FrmProveedores
     {
         /// <summary>
         /// Required designer variable.
@@ -29,17 +29,19 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
-            this.lblErrorNombre = new System.Windows.Forms.Label();
-            this.lblErrotTelefono = new System.Windows.Forms.Label();
+            this.txtContacto = new System.Windows.Forms.TextBox();
+            this.txtProductos = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
             this.txtId = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.btnGuardar = new System.Windows.Forms.Button();
             this.btnEditar = new System.Windows.Forms.Button();
             this.btnEliminar = new System.Windows.Forms.Button();
-            this.txtCorreo = new System.Windows.Forms.TextBox();
+            this.txtDireccion = new System.Windows.Forms.TextBox();
             this.txtTelefono = new System.Windows.Forms.TextBox();
             this.txtNombre = new System.Windows.Forms.TextBox();
-            this.txtDireccion = new System.Windows.Forms.TextBox();
+            this.txtCorreo = new System.Windows.Forms.TextBox();
             this.txtDireecion = new System.Windows.Forms.Label();
             this.lblCorreo = new System.Windows.Forms.Label();
             this.lblTelefon = new System.Windows.Forms.Label();
@@ -48,7 +50,6 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.btnBuscar = new System.Windows.Forms.Button();
             this.btnExportarEx = new System.Windows.Forms.Button();
-            this.label8 = new System.Windows.Forms.Label();
             this.txtBuscar = new System.Windows.Forms.TextBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.label6 = new System.Windows.Forms.Label();
@@ -59,48 +60,60 @@
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.lblErrorNombre);
-            this.panel1.Controls.Add(this.lblErrotTelefono);
+            this.panel1.Controls.Add(this.txtContacto);
+            this.panel1.Controls.Add(this.txtProductos);
+            this.panel1.Controls.Add(this.label4);
+            this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.txtId);
             this.panel1.Controls.Add(this.label7);
             this.panel1.Controls.Add(this.btnGuardar);
             this.panel1.Controls.Add(this.btnEditar);
             this.panel1.Controls.Add(this.btnEliminar);
-            this.panel1.Controls.Add(this.txtCorreo);
+            this.panel1.Controls.Add(this.txtDireccion);
             this.panel1.Controls.Add(this.txtTelefono);
             this.panel1.Controls.Add(this.txtNombre);
-            this.panel1.Controls.Add(this.txtDireccion);
+            this.panel1.Controls.Add(this.txtCorreo);
             this.panel1.Controls.Add(this.txtDireecion);
             this.panel1.Controls.Add(this.lblCorreo);
             this.panel1.Controls.Add(this.lblTelefon);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.label1);
-            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Location = new System.Drawing.Point(-1, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(406, 456);
-            this.panel1.TabIndex = 0;
+            this.panel1.Size = new System.Drawing.Size(406, 488);
+            this.panel1.TabIndex = 1;
             // 
-            // lblErrorNombre
+            // txtContacto
             // 
-            this.lblErrorNombre.AutoSize = true;
-            this.lblErrorNombre.ForeColor = System.Drawing.Color.Red;
-            this.lblErrorNombre.Location = new System.Drawing.Point(91, 108);
-            this.lblErrorNombre.Name = "lblErrorNombre";
-            this.lblErrorNombre.Size = new System.Drawing.Size(57, 13);
-            this.lblErrorNombre.TabIndex = 21;
-            this.lblErrorNombre.Text = "Obligatorio";
-            this.lblErrorNombre.Click += new System.EventHandler(this.lblErrorNombre_Click);
+            this.txtContacto.Location = new System.Drawing.Point(27, 300);
+            this.txtContacto.Name = "txtContacto";
+            this.txtContacto.Size = new System.Drawing.Size(153, 20);
+            this.txtContacto.TabIndex = 25;
             // 
-            // lblErrotTelefono
+            // txtProductos
             // 
-            this.lblErrotTelefono.AutoSize = true;
-            this.lblErrotTelefono.ForeColor = System.Drawing.Color.Red;
-            this.lblErrotTelefono.Location = new System.Drawing.Point(85, 173);
-            this.lblErrotTelefono.Name = "lblErrotTelefono";
-            this.lblErrotTelefono.Size = new System.Drawing.Size(87, 13);
-            this.lblErrotTelefono.TabIndex = 20;
-            this.lblErrotTelefono.Text = "(Formato xxx xxx)";
-            this.lblErrotTelefono.Click += new System.EventHandler(this.lblErrotTelefono_Click);
+            this.txtProductos.Location = new System.Drawing.Point(31, 352);
+            this.txtProductos.Name = "txtProductos";
+            this.txtProductos.Size = new System.Drawing.Size(153, 20);
+            this.txtProductos.TabIndex = 24;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(26, 284);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(53, 13);
+            this.label4.TabIndex = 23;
+            this.label4.Text = "Contacto:";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(30, 332);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(104, 13);
+            this.label3.TabIndex = 22;
+            this.label3.Text = "Producto Suministra:";
             // 
             // txtId
             // 
@@ -114,14 +127,14 @@
             this.label7.AutoSize = true;
             this.label7.Location = new System.Drawing.Point(28, 62);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(71, 13);
+            this.label7.Size = new System.Drawing.Size(88, 13);
             this.label7.TabIndex = 9;
-            this.label7.Text = "Id del Cliente:";
+            this.label7.Text = "Id del Proveedor:";
             // 
             // btnGuardar
             // 
             this.btnGuardar.BackColor = System.Drawing.Color.Lime;
-            this.btnGuardar.Location = new System.Drawing.Point(23, 390);
+            this.btnGuardar.Location = new System.Drawing.Point(23, 449);
             this.btnGuardar.Name = "btnGuardar";
             this.btnGuardar.Size = new System.Drawing.Size(75, 23);
             this.btnGuardar.TabIndex = 2;
@@ -132,7 +145,7 @@
             // btnEditar
             // 
             this.btnEditar.BackColor = System.Drawing.Color.Yellow;
-            this.btnEditar.Location = new System.Drawing.Point(139, 393);
+            this.btnEditar.Location = new System.Drawing.Point(139, 450);
             this.btnEditar.Name = "btnEditar";
             this.btnEditar.Size = new System.Drawing.Size(75, 23);
             this.btnEditar.TabIndex = 3;
@@ -143,7 +156,7 @@
             // btnEliminar
             // 
             this.btnEliminar.BackColor = System.Drawing.Color.Red;
-            this.btnEliminar.Location = new System.Drawing.Point(240, 389);
+            this.btnEliminar.Location = new System.Drawing.Point(244, 450);
             this.btnEliminar.Name = "btnEliminar";
             this.btnEliminar.Size = new System.Drawing.Size(75, 23);
             this.btnEliminar.TabIndex = 4;
@@ -151,16 +164,16 @@
             this.btnEliminar.UseVisualStyleBackColor = false;
             this.btnEliminar.Click += new System.EventHandler(this.btnEliminar_Click);
             // 
-            // txtCorreo
+            // txtDireccion
             // 
-            this.txtCorreo.Location = new System.Drawing.Point(27, 255);
-            this.txtCorreo.Name = "txtCorreo";
-            this.txtCorreo.Size = new System.Drawing.Size(153, 20);
-            this.txtCorreo.TabIndex = 8;
+            this.txtDireccion.Location = new System.Drawing.Point(31, 193);
+            this.txtDireccion.Name = "txtDireccion";
+            this.txtDireccion.Size = new System.Drawing.Size(153, 20);
+            this.txtDireccion.TabIndex = 8;
             // 
             // txtTelefono
             // 
-            this.txtTelefono.Location = new System.Drawing.Point(27, 193);
+            this.txtTelefono.Location = new System.Drawing.Point(33, 247);
             this.txtTelefono.Name = "txtTelefono";
             this.txtTelefono.Size = new System.Drawing.Size(153, 20);
             this.txtTelefono.TabIndex = 7;
@@ -172,17 +185,17 @@
             this.txtNombre.Size = new System.Drawing.Size(149, 20);
             this.txtNombre.TabIndex = 6;
             // 
-            // txtDireccion
+            // txtCorreo
             // 
-            this.txtDireccion.Location = new System.Drawing.Point(33, 305);
-            this.txtDireccion.Name = "txtDireccion";
-            this.txtDireccion.Size = new System.Drawing.Size(145, 20);
-            this.txtDireccion.TabIndex = 5;
+            this.txtCorreo.Location = new System.Drawing.Point(33, 401);
+            this.txtCorreo.Name = "txtCorreo";
+            this.txtCorreo.Size = new System.Drawing.Size(145, 20);
+            this.txtCorreo.TabIndex = 5;
             // 
             // txtDireecion
             // 
             this.txtDireecion.AutoSize = true;
-            this.txtDireecion.Location = new System.Drawing.Point(29, 283);
+            this.txtDireecion.Location = new System.Drawing.Point(30, 177);
             this.txtDireecion.Name = "txtDireecion";
             this.txtDireecion.Size = new System.Drawing.Size(55, 13);
             this.txtDireecion.TabIndex = 4;
@@ -191,7 +204,7 @@
             // lblCorreo
             // 
             this.lblCorreo.AutoSize = true;
-            this.lblCorreo.Location = new System.Drawing.Point(24, 236);
+            this.lblCorreo.Location = new System.Drawing.Point(33, 375);
             this.lblCorreo.Name = "lblCorreo";
             this.lblCorreo.Size = new System.Drawing.Size(97, 13);
             this.lblCorreo.TabIndex = 3;
@@ -200,7 +213,7 @@
             // lblTelefon
             // 
             this.lblTelefon.AutoSize = true;
-            this.lblTelefon.Location = new System.Drawing.Point(27, 168);
+            this.lblTelefon.Location = new System.Drawing.Point(33, 231);
             this.lblTelefon.Name = "lblTelefon";
             this.lblTelefon.Size = new System.Drawing.Size(52, 13);
             this.lblTelefon.TabIndex = 2;
@@ -221,22 +234,21 @@
             this.label1.Font = new System.Drawing.Font("Palatino Linotype", 12.22642F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(24, 24);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(145, 26);
+            this.label1.Size = new System.Drawing.Size(171, 26);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Datos del Cliente";
+            this.label1.Text = "Datos del Proveedor:";
             // 
             // panel2
             // 
             this.panel2.Controls.Add(this.btnBuscar);
             this.panel2.Controls.Add(this.btnExportarEx);
-            this.panel2.Controls.Add(this.label8);
             this.panel2.Controls.Add(this.txtBuscar);
             this.panel2.Controls.Add(this.dataGridView1);
             this.panel2.Controls.Add(this.label6);
-            this.panel2.Location = new System.Drawing.Point(405, 0);
+            this.panel2.Location = new System.Drawing.Point(411, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(468, 459);
-            this.panel2.TabIndex = 0;
+            this.panel2.Size = new System.Drawing.Size(572, 488);
+            this.panel2.TabIndex = 22;
             // 
             // btnBuscar
             // 
@@ -261,16 +273,6 @@
             this.btnExportarEx.UseVisualStyleBackColor = false;
             this.btnExportarEx.Click += new System.EventHandler(this.btnExportarEx_Click);
             // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Palatino Linotype", 12.22642F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(3, 390);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(170, 26);
-            this.label8.TabIndex = 4;
-            this.label8.Text = "Cliente Registrados";
-            // 
             // txtBuscar
             // 
             this.txtBuscar.Location = new System.Drawing.Point(20, 60);
@@ -281,11 +283,12 @@
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(0, 108);
+            this.dataGridView1.Location = new System.Drawing.Point(12, 108);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 45;
-            this.dataGridView1.Size = new System.Drawing.Size(383, 259);
+            this.dataGridView1.Size = new System.Drawing.Size(525, 259);
             this.dataGridView1.TabIndex = 1;
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // label6
             // 
@@ -293,21 +296,21 @@
             this.label6.Font = new System.Drawing.Font("Palatino Linotype", 12.22642F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.Location = new System.Drawing.Point(24, 24);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(147, 26);
+            this.label6.Size = new System.Drawing.Size(165, 26);
             this.label6.TabIndex = 0;
-            this.label6.Text = "Lista de Clientes";
+            this.label6.Text = "Lista de Productos";
             // 
-            // FlmClientes
+            // FrmProveedores
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.Silver;
-            this.ClientSize = new System.Drawing.Size(885, 461);
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ClientSize = new System.Drawing.Size(995, 485);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "FlmClientes";
-            this.Text = "FlmClientes";
+            this.Name = "FrmProveedores";
+            this.Text = "FrmProveedores";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
@@ -320,28 +323,29 @@
         #endregion
 
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.TextBox txtId;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Button btnGuardar;
+        private System.Windows.Forms.Button btnEditar;
+        private System.Windows.Forms.Button btnEliminar;
+        private System.Windows.Forms.TextBox txtCorreo;
+        private System.Windows.Forms.TextBox txtTelefono;
+        private System.Windows.Forms.TextBox txtNombre;
+        private System.Windows.Forms.TextBox txtDireccion;
         private System.Windows.Forms.Label txtDireecion;
         private System.Windows.Forms.Label lblCorreo;
         private System.Windows.Forms.Label lblTelefon;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox txtCorreo;
-        private System.Windows.Forms.TextBox txtTelefono;
-        private System.Windows.Forms.TextBox txtNombre;
-        private System.Windows.Forms.TextBox txtDireccion;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Button btnEliminar;
-        private System.Windows.Forms.Button btnEditar;
-        private System.Windows.Forms.Button btnGuardar;
-        private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.TextBox txtBuscar;
-        private System.Windows.Forms.Button btnExportarEx;
+        private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Button btnBuscar;
-        private System.Windows.Forms.TextBox txtId;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label lblErrotTelefono;
-        private System.Windows.Forms.Label lblErrorNombre;
+        private System.Windows.Forms.Button btnExportarEx;
+        private System.Windows.Forms.TextBox txtBuscar;
+        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.TextBox txtContacto;
+        private System.Windows.Forms.TextBox txtProductos;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label3;
     }
 }
